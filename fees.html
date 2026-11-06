@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Fees | Pawsitive Pet Academy</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="site-header">
+    <a href="index.html" class="logo">
+        <img src="images/pawsitive-logo.png" alt="Pawsitive Pet Academy logo">
+    </a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="courses.html">Courses</a>
+        <a href="overview.html">Overview</a>
+        <a href="fees.html" class="active">Calculate Fees</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+</header>
+
+<main>
+    <section class="page-banner">
+        <h1>Calculate Your Course Fees</h1>
+        <p>Select your courses to estimate the total cost.</p>
+    </section>
+
+    <section class="page-content">
+        <div class="content-card">
+            <h2>Course Fee Calculator</h2>
+            <p>Select one or more courses below.</p>
+
+            
+            <form id="feeForm">
+    <label>
+        <input type="checkbox" name="course" value="1500">
+        Canine Obedience Training – R1,500
+    </label>
+
+    <label>
+        <input type="checkbox" name="course" value="1500">
+        Pet Grooming – R1,500
+    </label>
+
+    <label>
+        <input type="checkbox" name="course" value="1500">
+        Animal Behaviour – R1,500
+    </label>
+
+    <label>
+        <input type="checkbox" name="course" value="1500">
+        Pet Business Management – R1,500
+    </label>
+
+    <label>
+        <input type="checkbox" name="course" value="750">
+        Puppy Care – R750
+    </label>
+
+    <label>
+        <input type="checkbox" name="course" value="750">
+        Pet First Aid – R750
+    </label>
+
+    <label>
+        <input type="checkbox" name="course" value="750">
+        Basic Dog Walking – R750
+    </label>
+
+    <div class="form-buttons">
+        <button type="submit">Calculate Fees</button>
+        <button type="reset" class="cancel-btn">Reset / Cancel</button>
+        <a href="index.html" class="home-btn">Home</a>
+    </div>
+</form>
+
+<div id="feeResult" class="result-box" aria-live="polite">
+    Your calculated fees will appear here.
+</div>
+            <div id="feeResult" class="result-box" aria-live="polite">
+                Your calculated fees will appear here.
+            </div>
+        </div>
+
+        <div class="content-card">
+            <h2>Discount Information</h2>
+            <p>1 course: No discount</p>
+            <p>2 courses: 5% discount</p>
+            <p>3 courses: 10% discount</p>
+            <p>4 or more courses: 15% discount</p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 Pawsitive Pet Academy. All rights reserved.</p>
+    <p>Learn. Care. Train.</p>
+</footer>
+
+</body>
+</html>

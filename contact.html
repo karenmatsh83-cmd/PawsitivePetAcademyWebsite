@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Pawsitive Pet Academy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="logo">
+        <a href="index.html">
+            <img src="images/pawsitive-logo.png"
+                 alt="Pawsitive Pet Academy official logo">
+        </a>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="courses.html">Courses</a>
+        <a href="overview.html">Course Overview</a>
+        <a href="fees.html">Calculate Fees</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+</header>
+
+<main>
+
+    <section class="page-banner">
+        <h1>Contact Us</h1>
+        <p>We would love to hear from you!</p>
+    </section>
+
+    <section class="page-content">
+
+        <div class="contact-grid">
+
+            <!-- CONTACT DETAILS -->
+            <div class="content-card">
+                <h2>Get in Touch</h2>
+
+                <p>
+                    Have questions about our courses or services?
+                    Contact Pawsitive Pet Academy using the details below.
+                </p>
+
+                <p><strong>Business Name:</strong><br>
+                    Pawsitive Pet Academy
+                </p>
+
+                <p><strong>Email Address:</strong><br>
+                    <a href="mailto:pawsitivepetacademy@gmail.com">
+                        pawsitivepetacademy@gmail.com
+                    </a>
+                </p>
+
+                <p><strong>Telephone:</strong><br>
+                    <a href="tel:0315550147">031 555 0147</a>
+                </p>
+
+                <p><strong>WhatsApp:</strong><br>
+                    <a href="https://wa.me/27715550147">
+                        071 555 0147
+                    </a>
+                </p>
+
+                <p><strong>Location:</strong><br>
+                    Durban, KwaZulu-Natal, South Africa
+                </p>
+
+                <p><strong>Tagline:</strong><br>
+                    Learn. Care. Train.
+                </p>
+            </div>
+
+            <!-- CONTACT FORM -->
+            <div class="content-card">
+                <h2>Send Us an Enquiry</h2>
+
+                <p>
+                    Complete the form below and let us know how we can help.
+                </p>
+
+                <form id="contactForm">
+
+                    <label for="contactName">Full Name:</label>
+                    <input type="text" id="contactName"
+                           name="name" required>
+
+                    <label for="contactEmail">Email Address:</label>
+                    <input type="email" id="contactEmail"
+                           name="email" required>
+
+                    <label for="contactPhone">Phone Number:</label>
+                    <input type="tel" id="contactPhone"
+                           name="phone">
+
+                    <label for="contactCourse">Course of Interest:</label>
+                    <select id="contactCourse" name="course" required>
+                        <option value="">Select a course</option>
+                        <option>Canine Obedience Training</option>
+                        <option>Pet Grooming</option>
+                        <option>Animal Behaviour</option>
+                        <option>Pet Business Management</option>
+                        <option>Puppy Care</option>
+                        <option>Pet First Aid</option>
+                        <option>Basic Dog Walking</option>
+                        <option>General Enquiry</option>
+                    </select>
+
+                    <label for="contactMessage">Your Message:</label>
+                    <textarea id="contactMessage" name="message"
+                              rows="5" required></textarea>
+
+                    <div class="form-buttons">
+                        <button type="submit">Send Enquiry</button>
+
+                        <button type="reset" class="cancel-btn">
+                            Clear Form
+                        </button>
+
+                        <a href="index.html" class="home-btn">
+                            Home
+                        </a>
+                    </div>
+
+                </form>
+
+                <div id="contactResult" class="result-box"
+                     aria-live="polite"></div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>Pawsitive Pet Academy | Learn. Care. Train.</p>
+    <p>&copy; 2026 Pawsitive Pet Academy. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

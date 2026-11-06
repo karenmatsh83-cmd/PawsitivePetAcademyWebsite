@@ -1,0 +1,467 @@
+/* PAWSITIVE PET ACADEMY WEBSITE */
+
+/* COLOUR PALETTE */
+:root {
+    --teal: #168C87;
+    --orange: #F28C28;
+    --cream: #FFF8E8;
+    --charcoal: #444444;
+    --white: #FFFFFF;
+}
+
+/* GENERAL STYLING */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--cream);
+    color: var(--charcoal);
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* HEADER AND NAVIGATION */
+.site-header {
+    background: var(--teal);
+    padding: 15px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.logo img {
+    width: 220px;
+    max-height: 90px;
+    object-fit: contain;
+    display: block;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+nav a {
+    color: var(--white);
+    padding: 10px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+nav a:hover,
+nav a.active {
+    background: var(--orange);
+}
+
+/* HOME PAGE */
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 65px 8%;
+}
+
+.hero-content,
+.hero-image {
+    flex: 1;
+}
+
+.welcome {
+    color: var(--teal);
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    color: var(--teal);
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-content > p:not(.welcome) {
+    margin-bottom: 22px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 370px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px #00000025;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+/* BUTTONS */
+.btn {
+    display: inline-block;
+    padding: 12px 22px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.primary-btn {
+    background: var(--orange);
+    color: var(--white);
+}
+
+.secondary-btn {
+    border: 2px solid var(--teal);
+    color: var(--teal);
+}
+
+.btn:hover {
+    opacity: 0.85;
+    transform: translateY(-2px);
+}
+
+/* HIGHLIGHT SECTION */
+.highlights {
+    padding: 55px 8%;
+    background: var(--white);
+    text-align: center;
+}
+
+.highlights h2,
+.call-to-action h2 {
+    color: var(--teal);
+    font-size: 30px;
+}
+
+.section-intro {
+    margin: 12px 0 30px;
+}
+
+.highlight-grid,
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.highlight-card {
+    background: var(--cream);
+    padding: 25px;
+    border-radius: 10px;
+    border-bottom: 4px solid var(--orange);
+}
+
+.highlight-card span {
+    font-size: 38px;
+}
+
+.highlight-card h3 {
+    color: var(--teal);
+    margin: 12px 0;
+}
+
+/* CALL TO ACTION */
+.call-to-action {
+    text-align: center;
+    padding: 55px 20px;
+}
+
+.call-to-action p {
+    margin: 12px 0 22px;
+}
+
+/* INNER PAGE BANNER */
+.page-banner {
+    background: var(--teal);
+    color: var(--white);
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.page-banner h1 {
+    font-size: 34px;
+    margin-bottom: 8px;
+}
+
+/* PAGE CONTENT */
+.page-content {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.content-card {
+    background: var(--white);
+    padding: 28px;
+    margin-bottom: 22px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px #00000010;
+}
+
+.content-card h2,
+.content-card h3 {
+    color: var(--teal);
+    margin-bottom: 12px;
+}
+
+.content-card p {
+    margin-bottom: 12px;
+}
+
+/* COURSE CARDS */
+.course-card {
+    background: var(--white);
+    padding: 22px;
+    border-radius: 10px;
+    border-top: 5px solid var(--orange);
+    box-shadow: 0 3px 12px #00000010;
+}
+
+.course-card h3 {
+    color: var(--teal);
+    margin-bottom: 10px;
+}
+
+.course-price {
+    color: var(--orange);
+    font-size: 21px;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+/* COURSE IMAGES */
+.course-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 7px;
+    margin-bottom: 12px;
+}
+
+/* TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--white);
+    margin: 20px 0;
+}
+
+th,
+td {
+    padding: 14px;
+    border: 1px solid #dddddd;
+    text-align: left;
+}
+
+th {
+    background: var(--teal);
+    color: var(--white);
+}
+
+/* FORMS */
+form {
+    max-width: 650px;
+    margin: 20px auto;
+    background: var(--white);
+    padding: 25px;
+    border-radius: 10px;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin: 15px 0 6px;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font: inherit;
+}
+
+form textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+form button {
+    margin-top: 18px;
+    padding: 12px 25px;
+    background: var(--orange);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form button:hover {
+    background: var(--teal);
+}
+
+.result-box {
+    background: var(--white);
+    padding: 20px;
+    border-left: 5px solid var(--orange);
+    border-radius: 7px;
+    margin-top: 20px;
+}
+
+/* CONTACT DETAILS */
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+/* FOOTER */
+footer {
+    background: var(--charcoal);
+    color: var(--white);
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+/* ACCESSIBILITY */
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 3px solid var(--orange);
+    outline-offset: 2px;
+}
+
+/* TABLET RESPONSIVENESS */
+@media (max-width: 800px) {
+    .site-header {
+        flex-direction: column;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 40px 6%;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .highlight-grid,
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 550px) {
+    .logo img {
+        width: 190px;
+    }
+
+    nav {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav a {
+        display: block;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero-image img {
+        height: 250px;
+    }
+
+    .highlight-grid,
+    .card-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .hero-buttons .btn {
+        text-align: center;
+    }
+
+    table {
+        font-size: 13px;
+    }
+
+    th,
+    td {
+        padding: 8px;
+    }
+}
+
+/* FORM BUTTONS */
+.form-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+}
+
+.form-buttons button,
+.home-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.form-buttons button[type="submit"] {
+    background-color: #168C87;
+    color: white;
+}
+
+.form-buttons .cancel-btn {
+    background-color: #F28C28;
+    color: white;
+}
+
+.home-btn {
+    background-color: #444444;
+    color: white;
+}
+
+.form-buttons button:hover,
+.home-btn:hover {
+    opacity: 0.85;
+}
